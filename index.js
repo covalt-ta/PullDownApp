@@ -29,7 +29,7 @@ addEventListener('load', function(){
   pullDownChild.forEach(function(list){
     list.addEventListener("click", function(){
       value = list.innerHTML;
-      currentList.innerHTML = value
+      currentList.innerHTML = value;
       if (pullDownParents.getAttribute("style") == "display: block;"){
         // pullDownParentsにdisplay:block;が付与されている場合（つまり表示されている時）実行される
         pullDownParents.removeAttribute("style", "display: block;");
